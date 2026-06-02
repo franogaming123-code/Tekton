@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TEKTON — Professional websites for small businesses. Starting from 4,000 DKK.">
+    <title>TEKTON — Websites for Small Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@1,700&family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#home" class="nav__logo">TEKTON</a>
+            <ul class="nav__links">
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#work" data-i18n="nav.work">Work</a></li>
+                <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#contact" class="pill" data-i18n="nav.cta">Get a Quote</a></li>
+            </ul>
+            <div class="nav__right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">DA</button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#services" data-i18n="nav.services">Services</a></li>
+            <li><a href="#work" data-i18n="nav.work">Work</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#contact" data-i18n="nav.cta">Get a Quote</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-gradient" aria-hidden="true">
+            <div class="blob blob--1"></div>
+            <div class="blob blob--2"></div>
+            <div class="blob blob--3"></div>
+            <div class="blob blob--4"></div>
+        </div>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="hero__geo" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__top">
+                    <span class="pill pill--ghost" data-i18n="hero.badge">Three students. One mission.</span>
+                </div>
+                <h1 class="hero__title">
+                    <em data-i18n="hero.l1">YOUR</em><br>
+                    <span data-i18n="hero.l2">BUSINESS.</span><br>
+                    <em data-i18n="hero.l3">ONLINE.</em><br>
+                    <span class="hero__l4" data-i18n="hero.l4">DONE</span> <em data-i18n="hero.l5">RIGHT.</em>
+                </h1>
+                <div class="hero__foot">
+                    <p class="hero__desc" data-i18n-html="hero.desc">
+                        Professional websites for small businesses —
+                        starting from <strong>4,000 DKK</strong>.
+                        No agency markup. Just results.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#contact" class="pill" data-i18n="hero.cta.primary">Get a Free Quote</a>
+                        <a href="#services" class="text-link"><span data-i18n="hero.cta.secondary">Our Services</span> <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+            <span>SCROLL</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <span class="marquee__item">TEKTON</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.affordable">Affordable Websites</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.done">Done Right</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.small">Small Businesses</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.ecom">E-Commerce</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.from">From 4,000 DKK</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item">TEKTON</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.affordable">Affordable Websites</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.done">Done Right</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.small">Small Businesses</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.ecom">E-Commerce</span>
+            <span class="marquee__sep">·</span>
+            <span class="marquee__item" data-i18n="marquee.from">From 4,000 DKK</span>
+            <span class="marquee__sep">·</span>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-bar__grid">
+                <div class="stats-bar__item">
+                    <span class="stats-bar__num">03</span>
+                    <span class="stats-bar__label" data-i18n="stats.students">Students</span>
+                </div>
+                <div class="stats-bar__item">
+                    <span class="stats-bar__num">2–3</span>
+                    <span class="stats-bar__label" data-i18n="stats.weeks">Weeks delivery</span>
+                </div>
+                <div class="stats-bar__item">
+                    <span class="stats-bar__num">100<span class="stats-bar__pct">%</span></span>
+                    <span class="stats-bar__label" data-i18n="stats.custom">Custom code</span>
+                </div>
+                <div class="stats-bar__item">
+                    <span class="stats-bar__num">24<span class="stats-bar__pct">H</span></span>
+                    <span class="stats-bar__label" data-i18n="stats.response">Response time</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-label fade-up" data-i18n="services.label">SERVICES</div>
+            <div class="service-list">
+                <div class="service-item fade-up">
+                    <button class="service-item__head" aria-expanded="false">
+                        <span class="service-item__num">01</span>
+                        <span class="service-item__title" data-i18n="services.s1.title">Small Business Websites</span>
+                        <span class="service-item__toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="service-item__body" hidden>
+                        <p data-i18n="services.s1.desc">A clean, professional online presence that turns visitors into customers. Perfect for local shops, service providers, and startups looking to get serious about the web.</p>
+                    </div>
+                </div>
+                <div class="service-item fade-up">
+                    <button class="service-item__head" aria-expanded="false">
+                        <span class="service-item__num">02</span>
+                        <span class="service-item__title" data-i18n="services.s2.title">E-Commerce</span>
+                        <span class="service-item__toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="service-item__body" hidden>
+                        <p data-i18n="services.s2.desc">Start selling online. We build fast, user-friendly stores that make buying from you a pleasure — not a chore. From product catalog to payment and checkout.</p>
+                    </div>
+                </div>
+                <div class="service-item fade-up">
+                    <button class="service-item__head" aria-expanded="false">
+                        <span class="service-item__num">03</span>
+                        <span class="service-item__title" data-i18n="services.s3.title">Mobile-First Design</span>
+                        <span class="service-item__toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="service-item__body" hidden>
+                        <p data-i18n="services.s3.desc">Over 60% of web traffic is mobile. Every site we deliver is fully optimised for phones, tablets, and desktops — no exceptions, no compromises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work / Portfolio -->
+    <section class="section section--border" id="work">
+        <div class="container">
+            <div class="section-label fade-up" data-i18n="work.label">OUR WORK</div>
+            <div class="work-card fade-up">
+                <div class="laptop-scene" id="laptopScene">
+                    <!-- 3D laptop frame: preserve-3d gives correct keyboard geometry -->
+                    <div class="laptop-frame" id="laptop">
+                        <div class="laptop__lid">
+                            <div class="laptop__cam" aria-hidden="true"></div>
+                            <!-- Screen placeholder: defines size/position for JS iframe overlay -->
+                            <div class="laptop__screen" id="laptopScreen">
+                                <div class="laptop__screen-off" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M12 3v7"/>
+                                        <path d="M6.5 6.5a8 8 0 1 0 11 0"/>
+                                    </svg>
+                                </div>
+                                <div class="laptop__screen-placeholder" id="screenPlaceholder" aria-hidden="true">
+                                    <span id="placeholderName">Project</span>
+                                    <small data-i18n="work.coming">Coming soon</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Keyboard: hinged at lid bottom, rotates 90° flat toward viewer -->
+                        <div class="laptop__base" aria-hidden="true">
+                            <div class="laptop__key-rows" aria-hidden="true">
+                                <div class="laptop__key-row"></div>
+                                <div class="laptop__key-row"></div>
+                                <div class="laptop__key-row"></div>
+                                <div class="laptop__key-row"></div>
+                            </div>
+                            <div class="laptop__trackpad"></div>
+                        </div>
+                    </div>
+                    <!-- iframe lives outside preserve-3d so it stays interactive -->
+                    <!-- JS positions and clips it to match the 3D screen exactly -->
+                    <div class="laptop__iframe-wrap" id="laptopIframeWrap">
+                        <iframe
+                            src="https://franogaming123-code.github.io/Enigma/"
+                            title="Enigma — example project by TEKTON"
+                            loading="lazy"
+                            tabindex="-1"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="work-card__meta">
+                    <div class="work-card__info">
+                        <span class="work-card__name">Enigma</span>
+                        <span class="work-card__type" data-i18n="work.enigma.type">Small Business Website</span>
+                    </div>
+                    <button class="power-btn" id="powerBtn" aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 3v7"/>
+                            <path d="M6.5 6.5a8 8 0 1 0 11 0"/>
+                        </svg>
+                        <span id="powerLabel" data-i18n="work.power.off">Turn on</span>
+                    </button>
+                </div>
+                <div class="work-card__nav">
+                    <button class="work-nav-arrow" id="workPrev" aria-label="Previous project">←</button>
+                    <div class="work-nav-dots" id="workDots">
+                        <button class="work-nav-dot is-active" data-idx="0" aria-label="Enigma"></button>
+                        <button class="work-nav-dot" data-idx="1" aria-label="Bloom Bakery"></button>
+                        <button class="work-nav-dot" data-idx="2" aria-label="Atlas Studio"></button>
+                    </div>
+                    <button class="work-nav-arrow" id="workNext" aria-label="Next project">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Tekton -->
+    <section class="section section--border" id="why">
+        <div class="container">
+            <div class="section-label fade-up" data-i18n="why.label">WHY TEKTON</div>
+            <div class="why-grid">
+                <div class="why-item fade-up">
+                    <span class="why-item__num">01</span>
+                    <h3 data-i18n="why.w1.title">Actually affordable</h3>
+                    <p data-i18n="why.w1.desc">We're students — our overhead is zero. We pass that saving on to you, with prices far below any agency.</p>
+                </div>
+                <div class="why-item fade-up">
+                    <span class="why-item__num">02</span>
+                    <h3 data-i18n="why.w2.title">Modern by default</h3>
+                    <p data-i18n="why.w2.desc">We live on the web. Every site we build is fast, clean, and looks like it was made in this decade.</p>
+                </div>
+                <div class="why-item fade-up">
+                    <span class="why-item__num">03</span>
+                    <h3 data-i18n="why.w3.title">Direct communication</h3>
+                    <p data-i18n="why.w3.desc">You talk to the people building your site — no account managers, no middlemen, no BS.</p>
+                </div>
+                <div class="why-item fade-up">
+                    <span class="why-item__num">04</span>
+                    <h3 data-i18n="why.w4.title">Fast turnaround</h3>
+                    <p data-i18n="why.w4.desc">We're hungry for the work. Most projects go live within 2–3 weeks from the first brief.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-label fade-up" data-i18n="pricing.label">PRICING</div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-up">
+                    <div class="pricing-card__label" data-i18n="pricing.starter.label">Starter</div>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__from" data-i18n="pricing.from">from</span>
+                        <span class="pricing-card__amount" data-countup="4000">4,000</span>
+                        <span class="pricing-card__unit">DKK</span>
+                    </div>
+                    <p data-i18n="pricing.starter.desc">A professional online presence for small businesses. Clean, fast, built to convert.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="pricing.starter.f1">Up to 5 pages</li>
+                        <li data-i18n="pricing.starter.f2">Mobile responsive design</li>
+                        <li data-i18n="pricing.starter.f3">Contact form</li>
+                        <li data-i18n="pricing.starter.f4">Google Maps integration</li>
+                        <li data-i18n="pricing.starter.f5">Basic SEO setup</li>
+                    </ul>
+                    <a href="#contact" class="pill pill--ghost" data-i18n="pricing.cta.start">Get Started</a>
+                </div>
+                <div class="pricing-card pricing-card--featured fade-up">
+                    <div class="pricing-card__label" data-i18n="pricing.ecom.label">E-Commerce</div>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__amount" data-i18n="pricing.custom">Custom</span>
+                    </div>
+                    <p data-i18n="pricing.ecom.desc">An online store built for your products. Price depends on scope — we always give a fair quote.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="pricing.ecom.f1">Full product catalog</li>
+                        <li data-i18n="pricing.ecom.f2">Shopping cart &amp; checkout</li>
+                        <li data-i18n="pricing.ecom.f3">Payment integration</li>
+                        <li data-i18n="pricing.ecom.f4">Order management</li>
+                        <li data-i18n="pricing.ecom.f5">Mobile optimised</li>
+                    </ul>
+                    <a href="#contact" class="pill" data-i18n="nav.cta">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--border" id="about">
+        <div class="container">
+            <div class="section-label fade-up" data-i18n="about.label">ABOUT US</div>
+            <div class="about-intro fade-up">
+                <h2 class="about-heading" data-i18n-html="about.heading">
+                    Three students.<br>
+                    <em>One passion.</em>
+                </h2>
+                <p class="about-body" data-i18n="about.body">
+                    We started TEKTON to prove that great websites don't have to cost a fortune.
+                    Fuelled by a genuine obsession with the digital world, we build sites that
+                    look like they cost five times more than they do.
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card fade-up">
+                    <div class="team-card__initial">FPB</div>
+                    <div class="team-card__info">
+                        <h3>Francesco Pertoldi Bianchi</h3>
+                        <span data-i18n="team.role1">Design &amp; Frontend</span>
+                    </div>
+                </div>
+                <div class="team-card fade-up">
+                    <div class="team-card__initial">MSN</div>
+                    <div class="team-card__info">
+                        <h3>Marcus Sejer Nørgaard</h3>
+                        <span data-i18n="team.role2">Development</span>
+                    </div>
+                </div>
+                <div class="team-card fade-up">
+                    <div class="team-card__initial">FQO</div>
+                    <div class="team-card__info">
+                        <h3>Filip Quist Olsen</h3>
+                        <span data-i18n="team.role3">Strategy &amp; Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-label fade-up" data-i18n="contact.label">GET IN TOUCH</div>
+            <div class="contact-layout">
+                <div class="contact-heading fade-up">
+                    <h2 data-i18n-html="contact.heading">Ready for your<br><em>new website?</em></h2>
+                    <p data-i18n-html="contact.subhead">Tell us about your project.<br>We'll reply within 24 hours.</p>
+                </div>
+                <!-- Set action="https://formspree.io/f/YOUR_ID" to receive emails -->
+                <form class="contact-form fade-up" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form.name">Name</label>
+                            <input type="text" id="name" name="name" data-i18n-placeholder="form.name.ph" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form.email">Email</label>
+                            <input type="email" id="email" name="email" data-i18n-placeholder="form.email.ph" placeholder="jane@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="type" data-i18n="form.type">Project type</label>
+                        <select id="type" name="type">
+                            <option value="" data-i18n="form.type.choose">Choose one...</option>
+                            <option value="small-business" data-i18n="form.type.small">Small Business Website</option>
+                            <option value="ecommerce" data-i18n="form.type.ecom">E-Commerce Store</option>
+                            <option value="other" data-i18n="form.type.other">Other / Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form.message">About your project</label>
+                        <textarea id="message" name="message" rows="4" data-i18n-placeholder="form.message.ph" placeholder="What does your business do? What are you looking for?"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="pill" data-i18n="form.submit">Send Message</button>
+                        <div class="form-success" id="formSuccess" data-i18n="form.success">We'll get back to you within 24 hours.</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="footer__logo">TEKTON</span>
+            <nav class="footer__links" aria-label="Footer navigation">
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <p class="footer__copy">&copy; 2026 TEKTON</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
